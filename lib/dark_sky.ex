@@ -51,6 +51,6 @@ defmodule DarkSky do
   end
 
   defp base_url() do
-    Application.get_env(:dark_sky, :base_url)
+    Application.get_env(:dark_sky, :base_url, "https://api.darksky.net")
   end
 end
