@@ -29,7 +29,7 @@ defmodule DarkSky do
               body
           end
 
-        {:ok, Jason.decode(body)}
+        Jason.decode(body)
 
       error ->
         error
