@@ -17,7 +17,6 @@ defmodule DarkSky do
            []
          ) do
       {:ok, 200, headers, ref} ->
-        IO.puts("#{inspect(headers)}")
         {:ok, body} = :hackney.body(ref)
 
         body =
